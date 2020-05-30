@@ -8,8 +8,8 @@ public class Schaltjahr {
 		boolean result1900 = Schaltjahr.isSchaltjahr(1900); // falsch
 
 		System.out.println("1900: " + result1900 //
-				+ "2000: " + result2000 //
-				+ "2020: " + result2020);
+				+ " - 2000: " + result2000 //
+				+ " - 2020: " + result2020);
 	}
 
 	private static boolean isSchaltjahr(int jahr) {

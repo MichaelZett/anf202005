@@ -7,19 +7,17 @@ public class BigCalculatorApp {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		String eingabe = "0";
-		int ergebnis = 0;
-		System.out.println("Bitte eingabe...");
-		while (scanner.hasNext()) {
-			if (scanner.hasNextInt()) {
-				ergebnis = ergebnis + Integer.parseInt(eingabe);
-				System.out.println("Bitte eingabe...");
-			} else {
-				System.out.println("Berechne Endergebnis");
-				System.out.println("Das Ergebnis ist: " + ergebnis);
-			}
-		}
+		int zahl = 0;
 
+		do {
+			System.out.println("Gib eine Zahl ein!");
+			while (!scanner.hasNextInt()) {
+				System.out.println("Das ist keine Zahl!");
+				scanner.next();
+			}
+			zahl = zahl + scanner.nextInt();
+		} while (!scanner.hasNext("calc"));
+		System.out.println("Die Summe ist: " + zahl);
 		scanner.close();
 	}
 
