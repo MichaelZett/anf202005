@@ -5,26 +5,22 @@ import java.util.Scanner;
 public class VerzweigungSwitch {
 
 	public static void main(String[] args) {
-		System.out.println("Gib eine Zahl ein!");
+		System.out.println("Eingabe bitte!");
 		Scanner scanner = new Scanner(System.in);
 
-		int zahl = scanner.nextInt();
+		String eingabe = scanner.next();
 
-		boolean istNull = zahl == 0;
-		boolean istEins = zahl == 1;
-
-		switch (zahl) {
-		case 1:
-			System.out.println("Eins.");
+		switch (eingabe) {
+		case "ja":
+		case "j":
+			System.out.println("true.");
 			break;
-		case 2:
-			System.out.println("Zwei.");
-			break;
-		case 3:
-			System.out.println("Drei.");
+		case "nein":
+		case "n":
+			System.out.println("false.");
 			break;
 		default:
-			System.out.println("Kenne ich nicht.");
+			System.out.println("Nicht erkannte Eingabe.");
 		}
 
 		scanner.close();

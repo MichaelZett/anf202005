@@ -9,15 +9,7 @@ public class VerzweigungJaNein {
 		Scanner scanner = new Scanner(System.in);
 
 		int zahl = scanner.nextInt();
-		/*
-		 * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
-		 * 
-		 * Erfrage vom Anwender eine Eingabe. Ist die Zeichenkette "ja" oder "j" ist,
-		 * soll "true" auf dem Bildschirm ausgegeben werden, bei "n" oder "nein" soll
-		 * "false" erscheinen und wenn es keines der genannten Alternativen ist, soll
-		 * "nicht erkannte Eingabe" erscheinen.
-		 */
-		boolean equals = "Peter".equals("Frank");
+
 		switch (zahl) {
 		case 1:
 			System.out.println("Eins.");
